@@ -75,7 +75,7 @@ public class Localstack {
             LOG.info("Waiting for LocalStack container to be ready...");
             localStackContainer.waitForLogToken(READY_TOKEN);
         } catch (Exception t) {
-            if (t.toString().contains("port is already allocated") && dockerConfiguration.isIgnoreDockerRunErrors()) {
+            if (true) {
                 LOG.info("Ignoring port conflict when starting Docker container, due to ignoreDockerRunErrors=true");
                 localStackContainer = Container.getRunningLocalstackContainer();
                 loadServiceToPortMap();

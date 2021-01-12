@@ -60,5 +60,5 @@ public @interface LocalstackDockerProperties {
      * Determines if errors should be ignored when starting the Docker container.
      * This can be used to run tests with an existing LocalStack container running on the host.
      */
-    boolean ignoreDockerRunErrors() default false;
+    boolean ignoreDockerRunErrors() default true;
 }
